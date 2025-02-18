@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@200..800&display=swap');
+
+html, body {
+  height: 100%; /* Asegura que html y body ocupen el 100% de la altura */
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+body {
+  background: linear-gradient(180deg, rgba(3,1,41,1) 0%, rgb(70, 70, 100) 50%, rgb(27, 67, 75) 100%);
+  font-family: 'Atkinson Hyperlegible Next', sans-serif;
+  color: #333; /* Color oscuro para texto */
+  margin: 0;
+}
+
+.kanban-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el contenido */
+}
+
+.column-wrapper {
+  margin-bottom: 20px;
+}
+
+.column-container {
+  background-color: #ffffff; /* Fondo blanco para las columnas */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar */
+  min-height: 400px;
+  transition: background-color 0.3s ease;
+}
+
+.column-container:hover {
+  background-color: #f1f1f1; /* Cambio suave al pasar el ratón */
+}
+
+.task-card {
+  background-color: #f9f9f9; /* Fondo muy claro para las tarjetas */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Borde sutil para cada tarea */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-card:hover {
+  background-color: #eef2f7; /* Resaltar la tarea al pasar el ratón */
+  transform: translateY(-3px); /* Efecto de desplazamiento suave */
+}
+
+.task-description {
+  font-size: 0.9em;
+  color: #666; /* Color gris para la descripción */
+}
+
+h2, h4 {
+  color: #333; /* Títulos de las columnas en color oscuro */
+}
+
+button {
+  background-color: #007bff; /* Botón azul para agregar tarea */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1em;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Botón azul más oscuro al pasar el ratón */
+}
+
+.modal-content {
+  color: black !important; /* Texto en negro para el modal */
+}
