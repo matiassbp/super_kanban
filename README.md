@@ -30,8 +30,13 @@ Este es un proyecto de tablero Kanban interactivo, desarrollado con tecnologías
    ```bash
    cd kanban-board
    ```
+3. Instala lo necesario:
 
-3. Abre el archivo `index.html` en tu navegador para ver el proyecto en acción.
+   ```bash
+   npm install
+   ```
+
+4. Utiliza `npm run dev` para ejecutar el proyecto.
 
 ## Uso
 
