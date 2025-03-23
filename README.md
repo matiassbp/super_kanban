@@ -1,46 +1,61 @@
+# Tablero Kanban
 
-# Kanban Board Project
-
-Este es un proyecto de tablero Kanban interactivo, desarrollado con tecnologías web modernas. Permite la creación y organización de tareas en un entorno visual y fácil de usar, ideal para gestionar proyectos de manera eficiente.
-
-## Tecnologías Utilizadas
-
-- **HTML5**: Estructura básica del sitio web.
-- **CSS3**: Estilo y diseño de la interfaz, incluyendo gradientes y efectos de hover.
-- **JavaScript**: Funcionalidad interactiva de las tareas y columnas.
-- **Tipografia**: [Atkinson Hyperlegible Next](https://fonts.google.com/specimen/Atkinson+Hyperlegible+Next) para la tipografía.
+Un tablero Kanban interactivo construido con React que permite organizar tareas en columnas (Pendientes, En Progreso, Finalizadas) y arrastrarlas entre ellas.
 
 ## Características
 
-- **Interactividad en las tareas**: Se pueden agregar, editar y eliminar tareas dentro de columnas.
-- **Efectos visuales**: Gradientes dinámicos de fondo y animaciones suaves en las tarjetas de tareas.
-- **Diseño adaptable**: La interfaz es responsive y se adapta a diferentes tamaños de pantalla.
-- **Modal de creación de tareas**: Agrega nuevas tareas mediante un modal emergente.
+- Interfaz drag and drop para mover tareas entre columnas
+- Creación de nuevas tareas con título y descripción
+- Vista detallada de tareas
+- Diseño responsivo
+- Animaciones visuales al interactuar con las tareas
+
+## Tecnologías utilizadas
+
+- React
+- @hello-pangea/dnd (fork de react-beautiful-dnd) para funcionalidad drag and drop
+- React Bootstrap para componentes de UI
+- CSS personalizado
+
+## Estructura del proyecto
+
+```
+src/
+├── components/
+│   ├── KanbanBoard/
+│   │   ├── index.jsx                # Componente principal que integra todo
+│   │   ├── data.js                  # Datos iniciales y funciones de manejo de datos
+│   │   ├── TaskCard.jsx             # Componente para cada tarea
+│   │   ├── Column.jsx               # Componente para cada columna
+│   │   ├── AddTaskModal.jsx         # Modal para agregar tareas
+│   │   ├── TaskDetailModal.jsx      # Modal para ver detalles de tareas
+│   │   └── styles.css               # Estilos compartidos
+```
 
 ## Instalación
 
-1. Clona este repositorio en tu máquina local:
+1. Clona este repositorio
+2. Instala las dependencias:
 
-   ```bash
-   git clone https://github.com/tu-usuario/kanban-board.git
-   ```
+```bash
+npm install
+```
 
-2. Navega al directorio del proyecto:
+3. Inicia el servidor de desarrollo:
 
-   ```bash
-   cd kanban-board
-   ```
-3. Instala lo necesario:
+```bash
+npm run dev
+```
 
-   ```bash
-   npm install
-   ```
+## Dependencias principales
 
-4. Utiliza `npm run dev` para ejecutar el proyecto.
+- React
+- @hello-pangea/dnd
+- Bootstrap
+- React-Bootstrap
 
 ## Uso
 
-1. **Agregar Tareas**: Haz clic en el botón "Agregar tarea" para abrir un modal y crear nuevas tareas.
-2. **Mover Tareas**: Arrastra y suelta las tareas entre las columnas.
-3. **Editar y Eliminar Tareas**: Usa los botones de acción dentro de cada tarea para editar o eliminar.
-
+- Para crear una nueva tarea, haz clic en el botón "Agregar Tarea" en la columna deseada
+- Para mover una tarea, arrástrala a la columna deseada
+- Para ver los detalles de una tarea, haz clic en ella
